@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>your account Activity</h1>
+<form action="" method="post">
+     {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit">
+</form>
+
+    {%for transaction in transactions%}
+    acc_no:{{transaction.accountnumber}}
+    amount:{{transaction.amount}}
+    <hr>
+    {% endfor %}
+personname:{{person_details.personname}},acc_no:{{person_details.accountnumber}}
+
+
+</body>
+</html>

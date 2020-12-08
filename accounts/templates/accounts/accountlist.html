@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{%for data in account%}
+personname:{{data.personname}},
+accountnumber:{{data.accountnumber}},
+accounttype:{{data.accounttype}},
+balance:{{data.balance}},
+phonenumber:{{data.phonenumber}},
+mpin:{{data.mpin}}
+<hr>
+{% endfor %}
+</body>
+</html>
